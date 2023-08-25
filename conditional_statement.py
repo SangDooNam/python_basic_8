@@ -15,6 +15,7 @@ Print out an appropriate message to the user.
 #                 return float(value)
 #             except ValueError:
 #                 print('Enter a valid Number !')
+                
 
 # num1 = IntFloatChanger('Enter first Number : ')
 
@@ -22,15 +23,15 @@ Print out an appropriate message to the user.
 
 # num3 = IntFloatChanger('Enter third Number : ')
 
-
-
-# result1 = num1 * num2 + num3
 # result2 = num1 + num2 + num3
 
 # if num1 == num2 == num3:
-#     print('If the given numbers are equl. they will be calculated triple and this is the result :', result1 )
+    
+#     result = 3 * (num1 + num2 + num3)
+#     print('If the given numbers are equal, the sum of them will be tripled. Here is the result :', result )
 # else:
-#     print('The sum of the given numbers is : ', result2)
+#     result = num1 + num2 + num3
+#     print('The sum of the given numbers is : ', result)
 
 '''
 Task 2 - get the difference :
@@ -55,16 +56,16 @@ Print out an appropriate message to the user.
                 
 #                 print('This is not valid number.')
 
-
 # num1 = FloatInt('First number : ')
 # num2 = FloatInt('Second number : ')
 
-# difference = num1 - num2
-
 # if num1 > num2:
-#     print('The result of calculation is : ', difference ** 2 )
+    
+#     result = 2 * (num1 - num2)
+#     print('The result of calculation is : ', result )
 # else:
-#     print('The result of calculation is : ', abs(difference) )
+#     result = abs(num1 - num2)
+#     print('The result of calculation is : ', (result) )
     
 '''
 Task 3 - odd or even number : 
@@ -90,13 +91,13 @@ Your task is to write a Python program to find whether a given number
 # else:
 #     print(num, 'is an odd number!!')
 
-# '''
-# Task 4 - circle area : 
-# Your task is to write a Python program which accepts 
-# (prompts) the float radius of a circle from the user and compute its area.
-# Round the result to two decimals!
-# Print out an appropriate message to the user.
-# '''
+'''
+Task 4 - circle area : 
+Your task is to write a Python program which accepts 
+(prompts) the float radius of a circle from the user and compute its area.
+Round the result to two decimals!
+Print out an appropriate message to the user.
+'''
 # import math
 
 # def floatAndInt(prompt):
@@ -113,7 +114,9 @@ Your task is to write a Python program to find whether a given number
 
 # num = floatAndInt(" I'm a circle area calculator. Please enter a radius. :" )
 
-# print('The area of the circle with the given radius is :', round(math.pi * num **2, 2))
+# result = round(math.pi * num **2, 2)
+
+# print('The area of the circle with the given radius', num, 'is :', result )
 
 '''
 Task 5 - guess a number :
@@ -176,14 +179,16 @@ In the Fahrenheit scale, water freezes at 32 degrees and boils at 212 degrees.
 #     if celsiusOrFahrenheit == 'c' and 'C':
 #         CtoF = intAndfloat(" You input 'C', so I will convert from Celsius to Fahrenheit. \n Please type in the temperature in Celsius: ")
         
-#         print('The temperature in Fahrenheit is', round(CtoF * 9/5 + 32 , 2),'degrees' )
+#         result = round(CtoF * 9/5 + 32 , 2)
+#         print('The temperature in Fahrenheit is', result,'degrees' )
         
 #         break
 
 #     elif celsiusOrFahrenheit == 'F' and 'f':
 #         FtoC = intAndfloat("You input 'F', so I will convert from Fahrenheit to Celsius. \n Please type in the temperature in Fahrenheit: ")
         
-#         print('The temperature in Celsius is', round((FtoC -32) * 5/9, 2),'degrees')
+#         result = round((FtoC -32) * 5/9, 2)
+#         print('The temperature in Celsius is',result,'degrees')
         
 #         break
     
@@ -208,6 +213,9 @@ Lower part can be done with any kind of loop or also with one line of code and w
 # for i in [4 * '* ',3 * '* ',2 * '* ',1 * '* ' ]:
 #     print(i)
 
+print(1 * '* ',2 * '* ',3 * '* ',4 * '* ',5 * '* ', sep='\n', )
+for i in range(4, 0, -1):
+    print(i * '* ')
 
 ''' Task 8 - Fibonacci series : 
 Your task is to write a Python program to get the Fibonacci series between 0 to 50.
